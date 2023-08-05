@@ -15,7 +15,7 @@ const Addnew = () => {
     const navigate=useNavigate();
     async function getdata()
     {
-    const {data}=await axios.get(`http://localhost:8080/Hero/id/${id}`);
+    const {data}=await axios.get(`https://herobackend.onrender.com/Hero/id/${id}`);
     console.log(data);
     setA(data);
     }
@@ -31,7 +31,7 @@ const Addnew = () => {
 
   const addNewHero = async() => {
     console.log(a);
-    const apiURL = `http://localhost:8080/Hero/update/${id}`;
+    const apiURL = `https://herobackend.onrender.com/Hero/update/${id}`;
     axios
       .put(apiURL, a)
       .then((response) => {

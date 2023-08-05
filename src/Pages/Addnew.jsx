@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; 
+import { useState } from "react"; 
 import { Link } from "react-router-dom";
 import axios from "axios";
 import CloudinaryUploadWidget from "../../Components/CloudinaryUploadWidget";
@@ -20,7 +20,7 @@ const Addnew = () => {
   };
 
   const addNewHero = () => {
-    const apiURL = "http://localhost:8080/Hero/";
+    const apiURL = "https://herobackend.onrender.com/Hero/";
 
     const postData = {
       title: title,

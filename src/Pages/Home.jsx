@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const DeleteHero = (id) => {
-    const Deleteurl = `http://localhost:8080/Hero/delete/${id}`;
+    const Deleteurl = `https://herobackend.onrender.com/Hero/delete/${id}`;
     axios
       .delete(Deleteurl)
       .then((response) => {
@@ -17,7 +17,7 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const res = await fetch(`http://localhost:8080/Hero`);
+    const res = await fetch(`https://herobackend.onrender.com/Hero`);
     const data = await res.json();
 
     // console.log(data);
