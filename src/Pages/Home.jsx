@@ -1,13 +1,13 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const DeleteHero = (id) => {
     const Deleteurl = `https://herobackend.onrender.com/Hero/delete/${id}`;
     axios
       .delete(Deleteurl)
-      .then((response) => {
+      .then(() => {
         // console.log(response.data);
       })
       .catch((error) => {
@@ -57,7 +57,7 @@ const Home = () => {
             return (
               <div className="py-10" key={index}>
                 <div className="rounded overflow-hidden shadow-lg max-w-sm ">
-                  <a href={hero?.image} target="_blank">
+                  <a href={hero?.image} target="_blank" rel="noreferrer">
                     <img
                       src={hero?.image}
                       alt="iron-man"

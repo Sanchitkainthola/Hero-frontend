@@ -1,7 +1,6 @@
 import Addnew from "./Pages/Addnew";
 import Home from "./Pages/Home";
 import UpdateHero from './Pages/UpdateHero'
-import Navbar from "./Pages/Navbar";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 function App() {
 
