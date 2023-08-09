@@ -37,11 +37,11 @@ const Home = () => {
       <div>
         <div className="flex flex-col items-center justify-start sticky top-0 z-50 bg-slate-400 mb-5">
         <h1 className="text-center capitalize text-4xl mt-8">
-          Super Heroes
+          PICFOLIO
         </h1>
         <hr className="w-1/5 mx-auto mt-2" />
         
-        <Link to="/Addnew" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-5 mb-3 rounded "> ADD NEW SUPERHERO </Link>
+        <Link to="/Addnew" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-5 mb-3 rounded "> ADD NEW PICTURE </Link>
          
         </div>
 
@@ -56,12 +56,13 @@ const Home = () => {
           {data.map((hero, index) => {
             return (
               <div className="py-10" key={index}>
-                <div className="rounded overflow-hidden shadow-lg max-w-sm ">
+                <div className="rounded overflow-hidden shadow-lg max-w-sm    ">
                   <a href={hero?.image} target="_blank" rel="noreferrer">
                     <img
                       src={hero?.image}
                       alt="iron-man"
-                      className="w-full hover:scale-110"
+                      className="w-full hover:scale-110 "
+                      style={{transition:"transform 0.3s"}}
                     />
                   </a>
                   <div className="px-6 py-4">

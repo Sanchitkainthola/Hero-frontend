@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import CloudinaryUploadWidget from "../../Components/CloudinaryUploadWidget";
 
@@ -47,11 +47,11 @@ const Addnew = () => {
       <div className="flex justify-center items-center h-screen bg-indigo-400">
         <div className="w-96 p-6 shadow-lg bg-white rounded-md">
           <h1 className="text-3xl block text-center font-semibold">
-            Update SuperHero
+            Update Picture
           </h1>
           <hr className="mt-3" />
           <div className="mt-3">
-            <label For="Title" className="block text-base mb-2">
+            <label htmlFor="Title" className="block text-base mb-2">
               Title
             </label>
             <input
@@ -59,13 +59,13 @@ const Addnew = () => {
               id="Title"
               value={a?.title}
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter Title For Superhero"
+              placeholder="Enter Title For Picture"
               onChange={(e) => setA({ ...a, title: e.target.value })}
             />
           </div>
 
           <div className="mt-3">
-            <label For="#Tag1" className="block text-base mb-2">
+            <label htmlFor="#Tag1" className="block text-base mb-2">
               #Tag1
             </label>
             <input
@@ -73,13 +73,13 @@ const Addnew = () => {
               id="#Tag1"
               value={a?.tag1}
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag1 For Superhero"
+              placeholder="Enter #Tag1 For Picture"
               onChange={(e) => setA({ ...a, tag1: e.target.value })}
             />
           </div>
 
           <div className="mt-3">
-            <label For="#Tag2" className="block text-base mb-2">
+            <label htmlFor="#Tag2" className="block text-base mb-2">
               #Tag2
             </label>
             <input
@@ -87,14 +87,14 @@ const Addnew = () => {
               id="#Tag2"
               value={a?.tag2}
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag2 For Superhero"
+              placeholder="Enter #Tag2 For Picture"
               
               onChange={(e) => setA({ ...a, tag2: e.target.value })}
             />
           </div>
 
           <div className="mt-3">
-            <label For="#Tag3" className="block text-base mb-2">
+            <label htmlFor="#Tag3" className="block text-base mb-2">
               #Tag3
             </label>
             <input
@@ -102,14 +102,14 @@ const Addnew = () => {
               id="#Tag3"
               value={a?.tag3}
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag3 For Superhero"
+              placeholder="Enter #Tag3 For Picture"
               onChange={(e) => setA({ ...a, tag3: e.target.value })}
             />
           </div>
 
           <div className="mt-3 flex flex-col-2 justify-around ">
             <div>
-              <label For="Image" className="block text-base mb-2 text font-bold">
+              <label htmlFor="Image" className="block text-base mb-2 text font-bold">
                 UPLOAD IMAGE
               </label>
 

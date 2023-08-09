@@ -52,7 +52,7 @@ const Addnew = () => {
       <div className="flex justify-center items-center h-screen bg-indigo-400">
         <div className="w-96 p-6 shadow-lg bg-white rounded-md">
           <h1 className="text-3xl block text-center font-semibold">
-            Add New SuperHero
+            Add New Picture
           </h1>
           <hr className="mt-3" />
           <div className="mt-3">
@@ -63,7 +63,7 @@ const Addnew = () => {
               type="text"
               id="Title"
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter Title For Superhero"
+              placeholder="Enter Title For Picture"
               onChange={(e) => {
                 setTitle(e.target.value);
               }}
@@ -78,7 +78,7 @@ const Addnew = () => {
               type="text"
               id="#Tag1"
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag1 For Superhero"
+              placeholder="Enter #Tag1 For Picture"
               onChange={(e) => {
                 setTag1(e.target.value);
               }}
@@ -93,7 +93,7 @@ const Addnew = () => {
               type="text"
               id="#Tag2"
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag2 For Superhero"
+              placeholder="Enter #Tag2 For Picture"
               onChange={(e) => {
                 setTag2(e.target.value);
               }}
@@ -108,7 +108,7 @@ const Addnew = () => {
               type="text"
               id="#Tag3"
               className="border w-full text-base px-2 py-1 focus:outline-none focus-ring-0 focus:border-gray-400"
-              placeholder="Enter #Tag3 For Superhero"
+              placeholder="Enter #Tag3 For Picture"
               onChange={(e) => {
                 setTag3(e.target.value);
               }}
